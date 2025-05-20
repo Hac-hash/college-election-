@@ -1,0 +1,95 @@
+/* General body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/p3.png');/* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Centered heading styling */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* White text color for contrast */
+}
+
+/* Candidate container styling */
+.candidate-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+
+/* Styling for Candidate 1 */
+.candidate-left {
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.candidate-left img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.candidate-left h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #fff; /* White text color for contrast */
+}
+
+.candidate-left .vote-checkbox {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+/* Styling for Candidate 2 */
+.candidate-right {
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.candidate-right img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.candidate-right h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #fff; /* White text color for contrast */
+}
+
+.candidate-right .vote-checkbox {
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* Submit button styling */
+.submit-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submit-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-container button:hover {
+    background-color: #555;
+}

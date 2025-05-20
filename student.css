@@ -1,0 +1,176 @@
+/* Body and Form Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Added for blurred background positioning */
+    overflow: hidden; /* Prevents scrolling issues with the blurred background */
+}
+
+/* Blurred Background Image */
+.blur-background {
+    background-image: url('image/p2.pn'); /* Replace 'your-image.jpg' with the path to your image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+    background-position: center;
+    filter: blur(10%); /* Adjust the blur intensity as needed */
+    z-index: -1; /* Keeps the blurred background behind all content */
+}
+
+/* Header Styling */
+header {
+    background-color: (51, 51, 51, 0.8); /* Slight transparency to see the background */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensures header is above the blurred background */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent to show background */
+    position: relative;
+    z-index: 1; /* Ensures main content is above the blurred background */
+}
+
+main section {
+    background: rgba(249, 249, 249, 0.9); /* Adjusted for transparency to blend with the background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(14, 12, 12, 0.258);
+    width: 300px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency for the footer as well */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures footer is above the blurred background */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+footer .footer-content section {
+    max-width: 400px;
+}
+
+footer .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer .footer-content p {
+    font-size: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+}

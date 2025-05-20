@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the results */
+.result-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title for the results page */
+.result-container h1 {
+    font-size: 2.5em;
+    color: #1f2833;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Styling for each candidate's result section */
+.candidate-result {
+    background-color: #e9ecef;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Candidate photo styling */
+.candidate-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #45a29e;
+    margin-bottom: 15px;
+}
+
+/* Candidate name styling */
+.candidate-result h2 {
+    font-size: 2em;
+    color: #0b0c10;
+    margin-bottom: 10px;
+}
+
+/* Candidate department styling */
+.candidate-result p {
+    font-size: 1.2em;
+    color: #1f2833;
+    font-weight: 500;
+}
+
+/* No results message styling */
+.result-container p {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+}

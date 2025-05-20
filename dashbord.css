@@ -1,0 +1,62 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.candidate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.candidate {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+}
